@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFILE -o myScript.o
+gcc -s 1-main.c -o 1-main.o
