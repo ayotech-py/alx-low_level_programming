@@ -11,6 +11,6 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar("%c ", ch);
+		putchar(ch);
 	return (0);
 }
