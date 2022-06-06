@@ -10,6 +10,6 @@ int main(void)
 	char ch;
 
 	ch = "abcdefghigklmnopqrstuvwxvz";
-	putchar(ch);
+	putchar("%c \n", ch);
 	return (0);
 }
