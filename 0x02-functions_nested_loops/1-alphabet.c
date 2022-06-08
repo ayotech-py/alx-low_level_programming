@@ -1,16 +1,11 @@
+#include "stdio.h"
+
 /**
- * main - check the code
- *
- * Function -  for printing alphabet
+ * print_alphabet - Prints the alphabets in lowercase
  *
  * Return: Always 0.
  */
 
-#include "main.h"
-
-/**
- * print_alphabet - prints the all the alphabets in lowercase
- */
 void print_alphabet(void)
 {
 	char ch;
