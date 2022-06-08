@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ *Functions for alphabets
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
 	char ch;
 
@@ -14,5 +14,16 @@ int main(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
+	return;
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }
