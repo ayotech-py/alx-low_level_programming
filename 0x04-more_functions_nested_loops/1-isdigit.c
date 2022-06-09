@@ -11,7 +11,7 @@ int _isdigit(int c)
 
 	for (d = 0; d <= 9; d++)
 	{
-		if (d == c)
+		if (c == d)
 			return (1);
 		else
 			return (0);
