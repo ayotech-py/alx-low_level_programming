@@ -7,8 +7,6 @@
  */
 int _isdigit(int c)
 {
-	int d;
-
 	if (c <= 9)
 		return (1);
 	else
