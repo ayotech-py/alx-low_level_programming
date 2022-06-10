@@ -15,13 +15,14 @@ int main(void)
 		int mod3 = a % 15;
 
 		if (mod3 == 0)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (mod1 == 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (mod2 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d ", a);
+			printf("%d", a);
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
