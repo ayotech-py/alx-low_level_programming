@@ -1,20 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strcat - syrings
- * @dest: first strubg
- * @src: second strinh
+ * _strcat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, c;
+	int count = 0, count2 = 0;
 
-	i = 0;
-	while (dest[i] != '\0')
-		i++;
+	while (*(dest + count) != '\0')
+	{
+		count++;
+	}
 
-	for (c = 0; src[c] != '\0'; c++, i++)
-		dest[i] = src[c];
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
 	return (dest);
 }
