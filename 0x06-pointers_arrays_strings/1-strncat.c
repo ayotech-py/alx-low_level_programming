@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		count++;
 	}
 
-	while (count2 <= n)
+	while (count2 <= (n - 1))
 	{
 		*(dest + count) = *(src + count2);
 		count++;
