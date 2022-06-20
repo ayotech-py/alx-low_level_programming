@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 	int i;
 	char *src = s, chr = c;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] >= '\0'; i++)
 	{
 		if (src[i] == chr)
 		{
