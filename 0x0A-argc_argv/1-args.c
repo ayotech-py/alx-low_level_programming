@@ -2,6 +2,8 @@
 
 /**
  * main - returns the number of arguments
+ * @argc: argc size
+ * @argv: argv string
  *
  * Return: Always 0
  */
