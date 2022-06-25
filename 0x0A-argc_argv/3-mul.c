@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	if (argc > 2)
 	{
 		int mul;
 		int a = strtol(argv[1], NULL, 10);
@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
 
 		mul = a * b;
 		printf("%d\n", mul);
+	}
+	else if (argc == 2)
+	{
+		printf("Error\n");
+		return (1);
 	}
 	else
 	{
