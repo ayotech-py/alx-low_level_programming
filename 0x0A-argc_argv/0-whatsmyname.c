@@ -5,8 +5,8 @@
  *
  * Return: Always
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[1]);
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
