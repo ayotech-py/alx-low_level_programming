@@ -18,11 +18,10 @@ int main(int argc, char *argv[])
 
 		while (count < argc)
 		{
-			if (atoi(argv[count]) < 0 || atoi(argv[count]) > 'a' || atoi(argv[count]) < 'z')
+			if (atoi(argv[count]) < 0)
 			{
 				printf("Error\n");
 				return (1);
-				break;
 			}
 			else
 			{
