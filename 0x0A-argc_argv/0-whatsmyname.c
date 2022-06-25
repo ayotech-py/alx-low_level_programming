@@ -2,6 +2,8 @@
 
 /**
  * main - print the name the file
+ * @argc: argc sizse
+ * @argv: argv string
  *
  * Return: Always
  */
