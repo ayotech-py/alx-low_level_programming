@@ -1,4 +1,5 @@
 #include "main.h"
+googoogoo
 #include <stdlib.h>
 /**
  * str_concat - concanates 2 strings
@@ -16,22 +17,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		while (s1[i] != '\0')
-			i++;
-		arr = malloc((i + 1) * sizeof(char));
-		for (x = 0; s1[x] != '\0'; x++)
-			arr[x] = s1[x];
-		return (arr);
+		s1 = "";
 	}
 
 	else if (s2 == NULL)
 	{
-		while (s2[i] != '\0')
-			i++;
-		arr = malloc((i + 1) * sizeof(char));
-		for (x = 0; s2[x] != '\0'; x++)
-			arr[x] = s2[x];
-		return (arr);
+		s2 = "";
 	}
 	while (s1[i] != '\0')
 		i++;
