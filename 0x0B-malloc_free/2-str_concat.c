@@ -1,6 +1,6 @@
 #include "main.h"
-googoogoo
 #include <stdlib.h>
+
 /**
  * str_concat - concanates 2 strings
  * @s1: string 1
@@ -19,8 +19,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-
-	else if (s2 == NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
