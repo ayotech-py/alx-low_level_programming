@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
-
+/**
+ * array_range - creates an array of intergers
+ * @min: minimum value
+ * @max: maximum value
+ * Return: returns null or a pointer pointing to the array
+ */
 int *array_range(int min, int max)
 {
 	int *arr;
@@ -10,12 +15,12 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	i = min;
-	while(i <= max)
+	while (i <= max)
 	{
 		j++;
 		i++;
 	}
-	arr = malloc(sizeof(int) * j);
+	arr = malloc(sizeof(int) * (j + 1));
 	if (arr == NULL)
 		return (NULL);
 	while (x <= j)
