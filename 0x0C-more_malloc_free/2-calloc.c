@@ -10,7 +10,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *str;
 
-	str = calloc(nmemb, (sizeof(int) * size));
+	str = calloc(nmemb, (sizeof(int) * size + 1));
 	if (str == NULL)
 		return (NULL);
 	if (nmemb == 0 || size == 0)
