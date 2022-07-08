@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 		if ((*op == '/' && atoi(argv[3]) == 0) || (*op == '%' && atoi(argv[3]) == 0))
 		{
 			printf("Error\n");
-			exit(99);
+			exit(100);
 		}
 		res = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 		printf("%d\n", res);
