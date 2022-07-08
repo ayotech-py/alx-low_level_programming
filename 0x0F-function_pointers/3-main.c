@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char **argv)
 {
@@ -11,7 +12,7 @@ int main(int argc, char **argv)
 
 	if (argc == 4)
 	{
-		if ((*op != '+') && (*op != '-') && (*op != '*') && (*op != '/') && (*op != '%'))
+		if (((*op != '+') && (*op != '-') && (*op != '*') && (*op != '/') && (*op != '%')) || (strlen(op) != 1))
 		{
 			printf("Error\n");
 			exit(99);
