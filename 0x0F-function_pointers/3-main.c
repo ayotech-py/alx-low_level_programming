@@ -11,6 +11,11 @@ int main(int argc, char **argv)
 
 	if (argc == 4)
 	{
+		if ((*op != '+') || (*op != '-') || (*op != '*') || (*op != '/') || (*op != '%'))
+		{
+			printf("Error\n");
+			exit(99);
+		}
 		if ((*op == '/' && atoi(argv[3]) == 0) || (*op == '%' && atoi(argv[3]) == 0))
 		{
 			printf("Error\n");
